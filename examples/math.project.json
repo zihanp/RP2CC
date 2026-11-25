@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "ir": "jump.rpm",
+  "app": "../firmware/main.c",
+  "board": "rp2354a",
+  "arch": "arm"
+}

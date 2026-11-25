@@ -1,0 +1,95 @@
+{
+  "toolchain": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "lean_build": "fresh temporary directory; -j1",
+  "lean_source_sha256": {
+    "Proofs.lean": "32f27b1f553410c3647374845b005a0b6089451d8fb40b28f7fe0e549d554cbe",
+    "Checker.lean": "c080494118f0791b84744ed6ffb981ce37ede125c45d668880a7a0583ebcd155",
+    "PoolExample.lean": "9caf44c1baa484898c0fecb742687913436f053bbb31ca5362df389fc461d404",
+    "Hazard3.lean": "de11c7d04aea4a1e43c04ea9fe4ac7deea14fe79efe584bfea5b3fb22c3b22e1",
+    "Replay.lean": "3e949acfba84a852447ab71d25ff6c28f87c4c1bc8d6282dde0ff893f29d6124",
+    "Audit.lean": "233d2104cff06463f9ac78fbe6c7099055f075b02bb6c27bceabd5c2c26567e8"
+  },
+  "validation_driver_sha256": {
+    "check.py": "0cad74f56b02116bdbac5b6b374a9c41c5f77d75933ad753692a6062c8967b26",
+    "instances.py": "8225e9dc0e1afdf926f4ba8b63d2d09b99e7e513b6301da105d254682616d030"
+  },
+  "audited_theorems": {
+    "floor_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "lane_is_floor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "decoded_floors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "affine_correct": [
+      "propext"
+    ],
+    "dirty_restore": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "slice_sound": [
+      "propext"
+    ],
+    "subst_sound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "norm_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "accepts_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "demo_lower84": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "demo_attains84": [
+      "propext"
+    ],
+    "hazard3_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source": "examples/bench.json",
+  "source_file_sha256": "49b62b7b05c499b9b21d30c3f01a69ff29c45f934ffadd98e3a84f566ed7898a",
+  "replayed": [
+    {
+      "certificate": "dist/generated/baseline/certificate.json",
+      "sha256": "dfb0c2743f5c93c7ccda68775f66f8be56ff4e889177d59f1d594ed0ef3047b4",
+      "result": "PASS baseline: 4 universal kernel equalities; 6 checked slices; 148 pool bytes",
+      "kernel_reduced_instance_theorems": 10,
+      "instance_lean_sha256": "aea885c0daa5d8fc0e16405965bc63dbc7090b986a85a801cf3d4beedf51a2b3"
+    },
+    {
+      "certificate": "dist/generated/optimized/certificate.json",
+      "sha256": "60c397f1dcf1cfcfb5c7e0cffde7f8667d2981acbe3c4b2e7dfa233d76032828",
+      "result": "PASS optimized: 4 universal kernel equalities; 6 checked slices; 84 pool bytes; attains the proved 84-byte lower bound",
+      "kernel_reduced_instance_theorems": 10,
+      "instance_lean_sha256": "3d726ae636e59ef9ab97b7a5bbce1290f046c2287dd00caf84138abf3ea9f79a"
+    }
+  ],
+  "self_test": {
+    "max_65535_iterations": "PASS optimized: 1 universal kernel equalities; 1 checked slices; 2 pool bytes",
+    "wrong_affine_constant": "REJECT: kernel large: equality not certified",
+    "wrong_pool_byte": "REJECT: blob obj: invalid slice or alignment",
+    "correct_bytes_wrong_alignment": "REJECT: blob obj: invalid slice or alignment"
+  }
+}

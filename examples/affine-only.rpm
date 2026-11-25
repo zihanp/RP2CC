@@ -1,0 +1,5 @@
+# A pure word kernel with no Hazard3 floor2 pattern: both cores can compile it.
+def orbit(x: u32) -> u32:
+    for _ in range(257):
+        x = 1664525 * x + 1013904223
+    return x

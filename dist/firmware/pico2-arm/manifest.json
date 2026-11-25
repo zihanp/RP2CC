@@ -1,0 +1,51 @@
+{
+  "architecture": "arm",
+  "kind": "flash",
+  "family_id": "0xe48bff59",
+  "uf2_bytes": 15360,
+  "payload_pages": 29,
+  "first": "0x10000000",
+  "end_exclusive": "0x10001d00",
+  "e10_marker": "0x103fff00",
+  "elf_machine": 40,
+  "elf_entry": "0x1000014d",
+  "elf_load_bytes_compared": 7192,
+  "verified_uf2_payload_bytes": 7424,
+  "board": "pico2",
+  "sdk_board": "pico2",
+  "flash_capacity_bytes": 4194304,
+  "option": "O3",
+  "sdk_version": "2.3.1",
+  "gcc": "arm-none-eabi-gcc.exe (Arm GNU Toolchain 14.3.Rel1 (Build arm-14.174)) 14.3.1 20250623",
+  "capability_smoke": false,
+  "usb_stdio": false,
+  "generated_c_sha256": "dcafd18b09aecb07439f5ee65a58c83661d0e7476d1562395f4db5322cdd77c3",
+  "files": {
+    "rp_lab.bin": {
+      "bytes": 7192,
+      "sha256": "e024640d850ca6d7a01a5eed637c34f3d668aba6fc864eb90c012874683314c3"
+    },
+    "rp_lab.elf": {
+      "bytes": 31816,
+      "sha256": "d00e30ce011420b64ea13a76df1dc2d31aa5dfd0feaa28b485bf5ed21360ba24"
+    },
+    "rp_lab.uf2": {
+      "bytes": 15360,
+      "sha256": "c927e2b418cd714e23d53e9f539dd3423d2692628773ea08f4b4525386692a11"
+    }
+  },
+  "elf_release": {
+    "original_sha256": "3c70e212a015506b63fab9b462fca3d1011e6c58a1931842d8e36c72fde55412",
+    "debug_sections_cleared": [
+      ".debug_line",
+      ".debug_line_str",
+      ".debug_info",
+      ".debug_abbrev",
+      ".debug_aranges",
+      ".debug_str",
+      ".debug_rnglists",
+      ".debug_frame"
+    ],
+    "entry_and_load_segments_unchanged": true
+  }
+}

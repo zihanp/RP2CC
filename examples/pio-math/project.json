@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "ir": "pairs.rpm",
+  "app": "main.c",
+  "pio": ["fifo_invert.pio"],
+  "sdk_libraries": ["hardware_pio"],
+  "board": "rp2354a",
+  "arch": "riscv"
+}

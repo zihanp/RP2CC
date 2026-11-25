@@ -1,0 +1,47 @@
+{
+  "architecture": "arm",
+  "kind": "sram-only",
+  "family_id": "0xe48bff59",
+  "uf2_bytes": 47104,
+  "payload_pages": 92,
+  "first": "0x20000000",
+  "end_exclusive": "0x20005c00",
+  "e10_marker": null,
+  "board": "rp2350",
+  "sdk_board": "rp2lab_2350",
+  "flash_capacity_bytes": 4194304,
+  "option": "O3",
+  "sdk_version": "2.3.1",
+  "gcc": "arm-none-eabi-gcc.exe (Arm GNU Toolchain 14.3.Rel1 (Build arm-14.174)) 14.3.1 20250623",
+  "capability_smoke": false,
+  "usb_stdio": true,
+  "generated_c_sha256": "dcafd18b09aecb07439f5ee65a58c83661d0e7476d1562395f4db5322cdd77c3",
+  "files": {
+    "rp_lab.bin": {
+      "bytes": 23384,
+      "sha256": "d1e55052b63cc53e61db789622178ae52a8b98bc0e59f8ded3d21e7ed069382f"
+    },
+    "rp_lab.elf": {
+      "bytes": 54300,
+      "sha256": "1570790cc0c8b0b210853850ea9f230514e868bf051c109cf3d58045b79bb447"
+    },
+    "rp_lab.uf2": {
+      "bytes": 47104,
+      "sha256": "470442a105765f31bc18c9eaea7d9d7ab7fc5a432fd34577f8de973a652cc816"
+    }
+  },
+  "elf_release": {
+    "original_sha256": "c846aa34360aa94e17e8b845aa421107243017bca379421c68652b117c38df26",
+    "debug_sections_cleared": [
+      ".debug_line",
+      ".debug_line_str",
+      ".debug_info",
+      ".debug_abbrev",
+      ".debug_aranges",
+      ".debug_str",
+      ".debug_rnglists",
+      ".debug_frame"
+    ],
+    "entry_and_load_segments_unchanged": true
+  }
+}

@@ -1,0 +1,7 @@
+; No instruction reads or drives any pins. One TX word produces one RX word.
+.program rp2lab_echo
+.wrap_target
+    pull block
+    mov isr, osr
+    push block
+.wrap

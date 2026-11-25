@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "ir": "affine-only.rpm",
+  "app": "affine-only.c",
+  "board": "rp2354a",
+  "arch": "riscv"
+}

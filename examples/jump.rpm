@@ -1,0 +1,19 @@
+# All words are u32. This is RP2CC math notation, not a Python module.
+STEPS = 257
+SCALE = 1_664_525
+BIAS = 1_013_904_223
+
+def affine(x: u32) -> u32:
+    for _ in range(STEPS):
+        x = SCALE * x + BIAS
+    return x
+
+def floor2(x: u32) -> u32:
+    return lane_floor16(x)
+
+def three_step(x: u32) -> u32:
+    # The frontend infers 7*y + 11, even though the source uses a different form.
+    y = x
+    for _ in range(3):
+        y = 3 * (y + 4) + 4 * y - 1
+    return y

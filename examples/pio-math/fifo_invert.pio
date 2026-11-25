@@ -1,0 +1,7 @@
+; TX FIFO -> bitwise NOT of the whole 32-bit word -> RX FIFO. No pins.
+.program fifo_invert
+.wrap_target
+    pull block
+    mov isr, !osr
+    push block
+.wrap

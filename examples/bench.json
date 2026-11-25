@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "kernels": [
+    {"name": "floor2", "args": ["x"], "body": ["floor2", "x"]},
+    {"name": "affine", "args": ["x"], "body": ["affine_iter", "x", 257, 1664525, 1013904223]},
+    {"name": "calibrated", "args": ["x"], "known": {"gain": 17, "offset": 33},
+     "body": ["xor", ["add", ["mul", "x", "gain"], ["sub", "offset", 1]], ["lshr", "x", 16]]},
+    {"name": "restore", "args": ["x", "scratch"], "body": ["sub", ["add", "x", "scratch"], "scratch"]}
+  ],
+  "blobs": [
+    {"name": "ramp", "align": 16, "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"},
+    {"name": "middle", "align": 8, "hex": "101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f"},
+    {"name": "tail", "align": 16, "hex": "303132333435363738393a3b3c3d3e3f"},
+    {"name": "sweep", "align": 16, "hex": "303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f"},
+    {"name": "sync", "align": 4, "hex": "a500ff5a"},
+    {"name": "empty", "align": 1, "hex": ""}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "format": "rp2cc.hazard3.tune.v1",
+  "ir_canonical_sha256": "6993ce0fa333978e5a2d7baa8dc1a3023b75d306acd6f0423b636d5c955e6d3e",
+  "portable_files": {
+    "certificate.json": "c08d1c0f8c542ad53add9ae30aa413cb44e787189eb9dc8f8eeb8bea2d72d444",
+    "kernels.c": "f399099b6105aa9f1aac36f267360908b74fedd18b0a88329fc18906ac06395e",
+    "kernels.h": "7d24d3b180f850f99e00c631d3f85a69c98cb87f4e61b08e9029a0ed43a62b94"
+  },
+  "scope": "portable certificate covers original IR; target receipt checks exact whole-function replacement, not the assembler or the hardware",
+  "selected": [
+    {
+      "argument": "x",
+      "kernel": "scale_pair",
+      "rule": "rv32.sext-srai-srai-pack.floor2.v1"
+    }
+  ],
+  "source_file_sha256": "44155707693df10f97da82163bdb2b29ff038311e87bde863c301df56251bf51",
+  "target": "RV32 Zbb + Zbkb (RP235x Hazard3)",
+  "target_files": {
+    "kernels.c": "4722a630e88488cdd9968f432ecce84a923d056e8f876dd867eda647600db7f1",
+    "kernels.h": "7d24d3b180f850f99e00c631d3f85a69c98cb87f4e61b08e9029a0ed43a62b94"
+  },
+  "value_sequence": [
+    "sext.h low, word",
+    "srai low, low, 4",
+    "srai word, word, 20",
+    "pack word, low, word"
+  ]
+}

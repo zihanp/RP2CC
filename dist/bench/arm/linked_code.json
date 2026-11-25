@@ -1,0 +1,190 @@
+{
+  "sha256": "1570790cc0c8b0b210853850ea9f230514e868bf051c109cf3d58045b79bb447",
+  "arch": "arm",
+  "segments": [
+    {
+      "paddr": "0x20000000",
+      "vaddr": "0x20000000",
+      "memsz": 35444,
+      "filesz": 23384
+    },
+    {
+      "paddr": "0x20081000",
+      "vaddr": "0x20081000",
+      "memsz": 2048,
+      "filesz": 0
+    }
+  ],
+  "symbols": {
+    "bs_affine": {
+      "address": "0x200009dc",
+      "symbol_bytes": 28,
+      "bytes_hex": "40f201130349044a013b01fb0020fbd1704700bf0d6619005ff36e3c",
+      "disassembly": [
+        "200009dc  40f20113  movw r3, #257 @ 0x101",
+        "200009e0  0349      ldr r1, [pc, #12] @ (200009f0 <bs_affine+0x14>)",
+        "200009e2  044a      ldr r2, [pc, #16] @ (200009f4 <bs_affine+0x18>)",
+        "200009e4  013b      subs r3, #1",
+        "200009e6  01fb0020  mla r0, r1, r0, r2",
+        "200009ea  fbd1      bne.n 200009e4 <bs_affine+0x8>",
+        "200009ec  7047      bx lr",
+        "200009ee  00bf      nop",
+        "200009f0  0d661900  .word 0x0019660d",
+        "200009f4  5ff36e3c  .word 0x3c6ef35f"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "hand_identity": {
+      "address": "0x20000a1c",
+      "symbol_bytes": 2,
+      "bytes_hex": "7047",
+      "disassembly": [
+        "20000a1c  7047      bx lr"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "op_floor2": {
+      "address": "0x200009f8",
+      "symbol_bytes": 16,
+      "bytes_hex": "000920f0f02000f1782080f078207047",
+      "disassembly": [
+        "200009f8  0009      lsrs r0, r0, #4",
+        "200009fa  20f0f020  bic.w r0, r0, #4026593280 @ 0xf000f000",
+        "200009fe  00f17820  add.w r0, r0, #2013296640 @ 0x78007800",
+        "20000a02  80f07820  eor.w r0, r0, #2013296640 @ 0x78007800",
+        "20000a06  7047      bx lr"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "b3_affine": {
+      "address": "0x200009a0",
+      "symbol_bytes": 28,
+      "bytes_hex": "40f201130349044a013b01fb0020fbd1704700bf0d6619005ff36e3c",
+      "disassembly": [
+        "200009a0  40f20113  movw r3, #257 @ 0x101",
+        "200009a4  0349      ldr r1, [pc, #12] @ (200009b4 <b3_affine+0x14>)",
+        "200009a6  044a      ldr r2, [pc, #16] @ (200009b8 <b3_affine+0x18>)",
+        "200009a8  013b      subs r3, #1",
+        "200009aa  01fb0020  mla r0, r1, r0, r2",
+        "200009ae  fbd1      bne.n 200009a8 <b3_affine+0x8>",
+        "200009b0  7047      bx lr",
+        "200009b2  00bf      nop",
+        "200009b4  0d661900  .word 0x0019660d",
+        "200009b8  5ff36e3c  .word 0x3c6ef35f"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "b2_affine": {
+      "address": "0x20000964",
+      "symbol_bytes": 28,
+      "bytes_hex": "40f201130349044a013b01fb0020fbd1704700bf0d6619005ff36e3c",
+      "disassembly": [
+        "20000964  40f20113  movw r3, #257 @ 0x101",
+        "20000968  0349      ldr r1, [pc, #12] @ (20000978 <b2_affine+0x14>)",
+        "2000096a  044a      ldr r2, [pc, #16] @ (2000097c <b2_affine+0x18>)",
+        "2000096c  013b      subs r3, #1",
+        "2000096e  01fb0020  mla r0, r1, r0, r2",
+        "20000972  fbd1      bne.n 2000096c <b2_affine+0x8>",
+        "20000974  7047      bx lr",
+        "20000976  00bf      nop",
+        "20000978  0d661900  .word 0x0019660d",
+        "2000097c  5ff36e3c  .word 0x3c6ef35f"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "b2_floor2": {
+      "address": "0x20000944",
+      "symbol_bytes": 30,
+      "bytes_hex": "c21740f3c033c0f30b1102f4704203f4704342ea10500b4343ea00407047",
+      "disassembly": [
+        "20000944  c217      asrs r2, r0, #31",
+        "20000946  40f3c033  sbfx r3, r0, #15, #1",
+        "2000094a  c0f30b11  ubfx r1, r0, #4, #12",
+        "2000094e  02f47042  and.w r2, r2, #61440 @ 0xf000",
+        "20000952  03f47043  and.w r3, r3, #61440 @ 0xf000",
+        "20000956  42ea1050  orr.w r0, r2, r0, lsr #20",
+        "2000095a  0b43      orrs r3, r1",
+        "2000095c  43ea0040  orr.w r0, r3, r0, lsl #16",
+        "20000960  7047      bx lr"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "hand_floor2": {
+      "address": "0x20000a20",
+      "symbol_bytes": 14,
+      "bytes_hex": "40f30b139bb2001543ea00407047",
+      "disassembly": [
+        "20000a20  40f30b13  sbfx r3, r0, #4, #12",
+        "20000a24  9bb2      uxth r3, r3",
+        "20000a26  0015      asrs r0, r0, #20",
+        "20000a28  43ea0040  orr.w r0, r3, r0, lsl #16",
+        "20000a2c  7047      bx lr"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "bs_floor2": {
+      "address": "0x200009bc",
+      "symbol_bytes": 30,
+      "bytes_hex": "c21740f3c03302f4704242ea105203f47043c0f30b10184340ea02407047",
+      "disassembly": [
+        "200009bc  c217      asrs r2, r0, #31",
+        "200009be  40f3c033  sbfx r3, r0, #15, #1",
+        "200009c2  02f47042  and.w r2, r2, #61440 @ 0xf000",
+        "200009c6  42ea1052  orr.w r2, r2, r0, lsr #20",
+        "200009ca  03f47043  and.w r3, r3, #61440 @ 0xf000",
+        "200009ce  c0f30b10  ubfx r0, r0, #4, #12",
+        "200009d2  1843      orrs r0, r3",
+        "200009d4  40ea0240  orr.w r0, r0, r2, lsl #16",
+        "200009d8  7047      bx lr"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "b3_floor2": {
+      "address": "0x20000980",
+      "symbol_bytes": 30,
+      "bytes_hex": "c21740f3c033c0f30b1102f4704203f4704342ea10500b4343ea00407047",
+      "disassembly": [
+        "20000980  c217      asrs r2, r0, #31",
+        "20000982  40f3c033  sbfx r3, r0, #15, #1",
+        "20000986  c0f30b11  ubfx r1, r0, #4, #12",
+        "2000098a  02f47042  and.w r2, r2, #61440 @ 0xf000",
+        "2000098e  03f47043  and.w r3, r3, #61440 @ 0xf000",
+        "20000992  42ea1050  orr.w r0, r2, r0, lsr #20",
+        "20000996  0b43      orrs r3, r1",
+        "20000998  43ea0040  orr.w r0, r3, r0, lsl #16",
+        "2000099c  7047      bx lr"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "op_affine": {
+      "address": "0x20000a08",
+      "symbol_bytes": 20,
+      "bytes_hex": "024a034b02fb0030704700bf0d5aa6465f549fe8",
+      "disassembly": [
+        "20000a08  024a      ldr r2, [pc, #8] @ (20000a14 <op_affine+0xc>)",
+        "20000a0a  034b      ldr r3, [pc, #12] @ (20000a18 <op_affine+0x10>)",
+        "20000a0c  02fb0030  mla r0, r2, r0, r3",
+        "20000a10  7047      bx lr",
+        "20000a12  00bf      nop",
+        "20000a14  0d5aa646  .word 0x46a65a0d",
+        "20000a18  5f549fe8  .word 0xe89f545f"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "hand_affine": {
+      "address": "0x20000a30",
+      "symbol_bytes": 20,
+      "bytes_hex": "024a034b02fb0030704700bf0d5aa6465f549fe8",
+      "disassembly": [
+        "20000a30  024a      ldr r2, [pc, #8] @ (20000a3c <hand_affine+0xc>)",
+        "20000a32  034b      ldr r3, [pc, #12] @ (20000a40 <hand_affine+0x10>)",
+        "20000a34  02fb0030  mla r0, r2, r0, r3",
+        "20000a38  7047      bx lr",
+        "20000a3a  00bf      nop",
+        "20000a3c  0d5aa646  .word 0x46a65a0d",
+        "20000a40  5f549fe8  .word 0xe89f545f"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    }
+  }
+}

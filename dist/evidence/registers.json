@@ -1,0 +1,2153 @@
+{
+  "schema": "rp2lab.sdk-register-headers.v1",
+  "sdk_root": ".deps/pico-sdk-master",
+  "sdk_inventory_subtree": "src/rp2350/hardware_structs/include/hardware/structs",
+  "sdk_version": "2.3.1",
+  "counts": {
+    "inventoried_headers": 55,
+    "structure_headers": 50,
+    "compatibility_forwarders": 5,
+    "direct_struct_typedefs": 69,
+    "headers_with_sdk_direct_asserts": 49,
+    "sdk_direct_assertions": 53,
+    "arm": {
+      "compiled": 55,
+      "rejected-by-sdk-arm-only-guard": 0
+    },
+    "riscv": {
+      "compiled": 55,
+      "rejected-by-sdk-arm-only-guard": 0
+    },
+    "riscv_strict": {
+      "compiled": 48,
+      "rejected-by-sdk-arm-only-guard": 7
+    }
+  },
+  "configurations": {
+    "arm": {
+      "reference_translation_unit": "firmware/sdk_contract.c",
+      "compiler": ".deps/bin/arm-none-eabi-gcc.exe",
+      "compiler_version": "arm-none-eabi-gcc.exe (Arm GNU Toolchain 14.3.Rel1 (Build arm-14.174)) 14.3.1 20250623",
+      "target_triple": "arm-none-eabi",
+      "sdk_version": "2.3.1",
+      "expected_elf_machine": 40,
+      "cmake_flags": [
+        "-DLIB_BOOT_STAGE2_HEADERS=1",
+        "-DLIB_PICO_ATOMIC=1",
+        "-DLIB_PICO_BIT_OPS=1",
+        "-DLIB_PICO_BIT_OPS_PICO=1",
+        "-DLIB_PICO_CLIB_INTERFACE=1",
+        "-DLIB_PICO_CRT0=1",
+        "-DLIB_PICO_CXX_OPTIONS=1",
+        "-DLIB_PICO_DIVIDER=1",
+        "-DLIB_PICO_DIVIDER_COMPILER=1",
+        "-DLIB_PICO_DOUBLE=1",
+        "-DLIB_PICO_DOUBLE_PICO=1",
+        "-DLIB_PICO_DOUBLE_PICO_DCP=1",
+        "-DLIB_PICO_FLASH=1",
+        "-DLIB_PICO_FLOAT=1",
+        "-DLIB_PICO_FLOAT_PICO=1",
+        "-DLIB_PICO_FLOAT_PICO_VFP=1",
+        "-DLIB_PICO_INT64_OPS=1",
+        "-DLIB_PICO_INT64_OPS_COMPILER=1",
+        "-DLIB_PICO_MALLOC=1",
+        "-DLIB_PICO_MEM_OPS=1",
+        "-DLIB_PICO_MEM_OPS_COMPILER=1",
+        "-DLIB_PICO_MULTICORE=1",
+        "-DLIB_PICO_NEWLIB_INTERFACE=1",
+        "-DLIB_PICO_PLATFORM=1",
+        "-DLIB_PICO_PLATFORM_COMMON=1",
+        "-DLIB_PICO_PLATFORM_COMPILER=1",
+        "-DLIB_PICO_PLATFORM_PANIC=1",
+        "-DLIB_PICO_PLATFORM_SECTIONS=1",
+        "-DLIB_PICO_PRINTF=1",
+        "-DLIB_PICO_PRINTF_PICO=1",
+        "-DLIB_PICO_RAND=1",
+        "-DLIB_PICO_RUNTIME=1",
+        "-DLIB_PICO_RUNTIME_INIT=1",
+        "-DLIB_PICO_STANDARD_BINARY_INFO=1",
+        "-DLIB_PICO_STANDARD_LINK=1",
+        "-DLIB_PICO_STDIO=1",
+        "-DLIB_PICO_STDLIB=1",
+        "-DLIB_PICO_SYNC=1",
+        "-DLIB_PICO_SYNC_CRITICAL_SECTION=1",
+        "-DLIB_PICO_SYNC_MUTEX=1",
+        "-DLIB_PICO_SYNC_SEM=1",
+        "-DLIB_PICO_TIME=1",
+        "-DLIB_PICO_TIME_ADAPTER=1",
+        "-DLIB_PICO_UNIQUE_ID=1",
+        "-DLIB_PICO_UTIL=1",
+        "-DPICO_32BIT=1",
+        "-DPICO_BOARD=\"rp2lab_2354a\"",
+        "-DPICO_BUILD=1",
+        "-DPICO_CMAKE_BUILD_TYPE=\"Release\"",
+        "-DPICO_COPY_TO_RAM=0",
+        "-DPICO_CXX_ENABLE_EXCEPTIONS=0",
+        "-DPICO_NO_FLASH=0",
+        "-DPICO_NO_HARDWARE=0",
+        "-DPICO_ON_DEVICE=1",
+        "-DPICO_PLATFORM_STRING=\"rp2350-arm-s\"",
+        "-DPICO_RP2350=1",
+        "-DPICO_TARGET_NAME=\"rp_lab\"",
+        "-DPICO_THREAD_LOCAL_EMUTLS_CONFIRMED=1",
+        "-DPICO_THREAD_LOCAL_MODE_PER_THREAD=1",
+        "-DPICO_USE_BLOCKED_RAM=0",
+        "-DPICO_XIP_RAM=0",
+        "-I<project>/dist/generated/optimized",
+        "-I<project>/firmware",
+        "-I<build>",
+        "-I<sdk>/src/rp2_common/pico_atomic/include",
+        "-isystem",
+        "<sdk>/src/common/pico_stdlib_headers/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_gpio/include",
+        "-isystem",
+        "<sdk>/src/common/pico_base_headers/include",
+        "-isystem",
+        "<build>/generated/pico_base",
+        "-isystem",
+        "<sdk>/src/boards/include",
+        "-isystem",
+        "<sdk>/src/rp2350/pico_platform/include",
+        "-isystem",
+        "<sdk>/src/rp2350/hardware_regs/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_base/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_platform_common/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_platform_compiler/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_platform_panic/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_platform_sections/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_dcp/include",
+        "-isystem",
+        "<sdk>/src/rp2350/hardware_structs/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_rcp/include",
+        "-isystem",
+        "<sdk>/src/common/hardware_claim/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_sync/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_sync_spin_lock/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_irq/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_uart/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_resets/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_clocks/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_pll/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_vreg/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_watchdog/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_ticks/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_bootrom/include",
+        "-isystem",
+        "<sdk>/src/common/boot_picoboot_headers/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/boot_bootrom_headers/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_boot_lock/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_flash/include",
+        "-isystem",
+        "<sdk>/src/common/pico_time/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_timer/include",
+        "-isystem",
+        "<sdk>/src/common/pico_sync/include",
+        "-isystem",
+        "<sdk>/src/common/pico_util/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_time_adapter/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_xosc/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_divider/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_runtime/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_runtime_init/include",
+        "-isystem",
+        "<sdk>/src/common/pico_bit_ops_headers/include",
+        "-isystem",
+        "<sdk>/src/common/pico_divider_headers/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_double/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_float/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_malloc/include",
+        "-isystem",
+        "<sdk>/src/common/pico_binary_info/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_printf/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_stdio/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_multicore/include",
+        "-isystem",
+        "<sdk>/src/common/boot_picobin_headers/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_cxx_options/include",
+        "-isystem",
+        "<sdk>/src/rp2350/boot_stage2/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_thread_local/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_pio/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_dma/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_adc/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_spi/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_i2c/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_pwm/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_interp/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_powman/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_xip_cache/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_flash/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_sha256/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_exception/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_rand/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_unique_id/include",
+        "-mcpu=cortex-m33",
+        "-mthumb",
+        "-march=armv8-m.main+fp+dsp",
+        "-mcmse",
+        "-mfloat-abi=softfp",
+        "-ftls-model=local-exec",
+        "-O3",
+        "-DNDEBUG",
+        "-std=gnu11",
+        "-fno-math-errno",
+        "-ffunction-sections",
+        "-fdata-sections"
+      ],
+      "cmake_flags_sha256": "606402cde39262ae11209240dcb43a59a02818415617015150346975f074d9d8"
+    },
+    "riscv": {
+      "reference_translation_unit": "firmware/sdk_contract.c",
+      "compiler": ".deps/riscv/bin/riscv32-pico-elf-gcc.exe",
+      "compiler_version": "riscv32-pico-elf-gcc.exe (ga690b2cf8) 16.1.0",
+      "target_triple": "riscv32-pico-elf",
+      "sdk_version": "2.3.1",
+      "expected_elf_machine": 243,
+      "cmake_flags": [
+        "-DLIB_BOOT_STAGE2_HEADERS=1",
+        "-DLIB_PICO_ATOMIC=1",
+        "-DLIB_PICO_BIT_OPS=1",
+        "-DLIB_PICO_BIT_OPS_PICO=1",
+        "-DLIB_PICO_CLIB_INTERFACE=1",
+        "-DLIB_PICO_CRT0=1",
+        "-DLIB_PICO_CXX_OPTIONS=1",
+        "-DLIB_PICO_DIVIDER=1",
+        "-DLIB_PICO_DIVIDER_COMPILER=1",
+        "-DLIB_PICO_DOUBLE=1",
+        "-DLIB_PICO_DOUBLE_COMPILER=1",
+        "-DLIB_PICO_FLASH=1",
+        "-DLIB_PICO_FLOAT=1",
+        "-DLIB_PICO_FLOAT_PICO=1",
+        "-DLIB_PICO_INT64_OPS=1",
+        "-DLIB_PICO_INT64_OPS_COMPILER=1",
+        "-DLIB_PICO_MALLOC=1",
+        "-DLIB_PICO_MEM_OPS=1",
+        "-DLIB_PICO_MEM_OPS_COMPILER=1",
+        "-DLIB_PICO_MULTICORE=1",
+        "-DLIB_PICO_NEWLIB_INTERFACE=1",
+        "-DLIB_PICO_PLATFORM=1",
+        "-DLIB_PICO_PLATFORM_COMMON=1",
+        "-DLIB_PICO_PLATFORM_COMPILER=1",
+        "-DLIB_PICO_PLATFORM_PANIC=1",
+        "-DLIB_PICO_PLATFORM_SECTIONS=1",
+        "-DLIB_PICO_PRINTF=1",
+        "-DLIB_PICO_PRINTF_PICO=1",
+        "-DLIB_PICO_RAND=1",
+        "-DLIB_PICO_RUNTIME=1",
+        "-DLIB_PICO_RUNTIME_INIT=1",
+        "-DLIB_PICO_STANDARD_BINARY_INFO=1",
+        "-DLIB_PICO_STANDARD_LINK=1",
+        "-DLIB_PICO_STDIO=1",
+        "-DLIB_PICO_STDLIB=1",
+        "-DLIB_PICO_SYNC=1",
+        "-DLIB_PICO_SYNC_CRITICAL_SECTION=1",
+        "-DLIB_PICO_SYNC_MUTEX=1",
+        "-DLIB_PICO_SYNC_SEM=1",
+        "-DLIB_PICO_TIME=1",
+        "-DLIB_PICO_TIME_ADAPTER=1",
+        "-DLIB_PICO_UNIQUE_ID=1",
+        "-DLIB_PICO_UTIL=1",
+        "-DPICO_32BIT=1",
+        "-DPICO_BOARD=\"rp2lab_2354a\"",
+        "-DPICO_BUILD=1",
+        "-DPICO_CMAKE_BUILD_TYPE=\"Release\"",
+        "-DPICO_COPY_TO_RAM=0",
+        "-DPICO_CRT0_NO_ISR_RISCV_MACHINE_EXCEPTION=1",
+        "-DPICO_CXX_ENABLE_EXCEPTIONS=0",
+        "-DPICO_NO_FLASH=0",
+        "-DPICO_NO_HARDWARE=0",
+        "-DPICO_ON_DEVICE=1",
+        "-DPICO_PLATFORM_STRING=\"rp2350-riscv\"",
+        "-DPICO_RISCV=1",
+        "-DPICO_RP2350=1",
+        "-DPICO_TARGET_NAME=\"rp_lab\"",
+        "-DPICO_THREAD_LOCAL_MODE_PER_THREAD=1",
+        "-DPICO_USE_BLOCKED_RAM=0",
+        "-DPICO_XIP_RAM=0",
+        "-I<project>/dist/generated/optimized",
+        "-I<project>/firmware",
+        "-I<build>",
+        "-I<sdk>/src/rp2_common/pico_atomic/include",
+        "-isystem",
+        "<sdk>/src/common/pico_stdlib_headers/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_gpio/include",
+        "-isystem",
+        "<sdk>/src/common/pico_base_headers/include",
+        "-isystem",
+        "<build>/generated/pico_base",
+        "-isystem",
+        "<sdk>/src/boards/include",
+        "-isystem",
+        "<sdk>/src/rp2350/pico_platform/include",
+        "-isystem",
+        "<sdk>/src/rp2350/hardware_regs/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_base/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_platform_common/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_platform_compiler/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_platform_panic/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_platform_sections/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_dcp/include",
+        "-isystem",
+        "<sdk>/src/rp2350/hardware_structs/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_rcp/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_hazard3/include",
+        "-isystem",
+        "<sdk>/src/common/hardware_claim/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_sync/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_sync_spin_lock/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_irq/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_uart/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_resets/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_clocks/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_pll/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_vreg/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_watchdog/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_ticks/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_bootrom/include",
+        "-isystem",
+        "<sdk>/src/common/boot_picoboot_headers/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/boot_bootrom_headers/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_boot_lock/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_flash/include",
+        "-isystem",
+        "<sdk>/src/common/pico_time/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_timer/include",
+        "-isystem",
+        "<sdk>/src/common/pico_sync/include",
+        "-isystem",
+        "<sdk>/src/common/pico_util/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_time_adapter/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_xosc/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_divider/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_runtime/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_runtime_init/include",
+        "-isystem",
+        "<sdk>/src/common/pico_bit_ops_headers/include",
+        "-isystem",
+        "<sdk>/src/common/pico_divider_headers/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_double/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_float/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_malloc/include",
+        "-isystem",
+        "<sdk>/src/common/pico_binary_info/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_printf/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_stdio/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_riscv/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_multicore/include",
+        "-isystem",
+        "<sdk>/src/common/boot_picobin_headers/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_cxx_options/include",
+        "-isystem",
+        "<sdk>/src/rp2350/boot_stage2/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_thread_local/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_pio/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_dma/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_adc/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_spi/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_i2c/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_pwm/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_interp/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_powman/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_xip_cache/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_flash/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_sha256/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/hardware_exception/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_rand/include",
+        "-isystem",
+        "<sdk>/src/rp2_common/pico_unique_id/include",
+        "-mcpu=hazard3-rp2350",
+        "-mstrict-align",
+        "-ftls-model=local-exec",
+        "-O3",
+        "-DNDEBUG",
+        "-std=gnu11",
+        "-ffunction-sections",
+        "-fdata-sections"
+      ],
+      "cmake_flags_sha256": "93c1fd87548397fe7909a55be4483cdd9cdf93ca2a4a373c6bef7045d4303192"
+    }
+  },
+  "modes": {
+    "arm": "as configured",
+    "riscv": "as configured",
+    "riscv_strict": "PICO_FORBID_ARM_HEADERS_ON_RISCV=1"
+  },
+  "evidence_scope": "Individual includes, SDK static assertions and nonzero sizeof each directly declared structure. GCC direct header path and zero-allocated-byte target ELF32 objects checked. No link, MMIO or hardware execution in this audit.",
+  "separate_existing_evidence": {
+    "link_source": "firmware/sdk_contract.c",
+    "linked_manifests": [
+      "dist/firmware/sdk-contract-arm/manifest.json",
+      "dist/firmware/sdk-contract-riscv/manifest.json"
+    ],
+    "flash_and_sram_image_checks": "dist/firmware/audit.json",
+    "board_runs": [
+      "dist/bench/arm/results.json",
+      "dist/bench/riscv/results.json",
+      "dist/bench/riscv-tuned/results.json"
+    ]
+  },
+  "headers": [
+    {
+      "header": "accessctrl.h",
+      "sha256": "fc47a078165a7c37ae92fd8db95e0edb59911624ac7f9e68970db93e38664c4c",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "accessctrl_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (accessctrl_hw_t) == 0x00ec, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "af5f5039ac4736407897dc4f2354f8a591f8316ae27205229e6ed956eee66fb0",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "13d5505f6b04f805ce98e0422ada24ab1cdbda9acb0b4525f5a342e4958c90fd",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "13d5505f6b04f805ce98e0422ada24ab1cdbda9acb0b4525f5a342e4958c90fd",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "adc.h",
+      "sha256": "116965fbf999439f7bd7c3039689f8a54e9c0ec31e6218de9c11d8e2ed8d5b72",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "adc_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (adc_hw_t) == 0x0024, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "54ebc9edc3c603f2e3d737bb16a57f7bd22429a00692fe2159e6086a2a6fbdc3",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "d38b9176ccdb35f4ddfd86109b7e5aa7c057b3918c1b4985572be62ba6f90af6",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "d38b9176ccdb35f4ddfd86109b7e5aa7c057b3918c1b4985572be62ba6f90af6",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "bootram.h",
+      "sha256": "5709202151f48fc810b9c9e3c34d53fd3b19811545befc84b6b8910c37c19dd6",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "bootram_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (bootram_hw_t) == 0x002c, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "de471ff2952e694ff8f51506387471b70fc10e9cb943611e151c5f35e81bd999",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "ba4a53effc6ce7868e92f42db81bbbbb02a31d70e0e71a51e3174c7bd7c0a0e7",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "ba4a53effc6ce7868e92f42db81bbbbb02a31d70e0e71a51e3174c7bd7c0a0e7",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "bus_ctrl.h",
+      "sha256": "a24aa335315991869879a7e0993f9ba72ba3a44dac69bb3baf2a423770e4696e",
+      "kind": "compatibility-forwarder",
+      "direct_struct_typedefs": [],
+      "forwards_to": [
+        "busctrl.h"
+      ],
+      "sdk_direct_static_assertions": [],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "d21a09b6fb29abb824ec15e250bdec04c545cb0c3c804ed422b3d677d309e22b",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "3db15f726d3680229da9cc334092b89ce871169e3d049de9d55acfcf6d5b0a53",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "3db15f726d3680229da9cc334092b89ce871169e3d049de9d55acfcf6d5b0a53",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "busctrl.h",
+      "sha256": "573f558d573256933a93d9a4f4bd804e86a5223e66a4470ed29d3531ca25c61c",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "bus_ctrl_perf_hw_t",
+        "busctrl_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (busctrl_hw_t) == 0x002c, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "c68f102372e7f1d0a487118259b19b5dbe54cccb4adcb53a2d028f0c61d50fde",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "1698330a5c53d62d93ce0e1e55b0292b50764d090cdd2300ce372f85716b0f20",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "1698330a5c53d62d93ce0e1e55b0292b50764d090cdd2300ce372f85716b0f20",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "clocks.h",
+      "sha256": "93da54c507115d7bd4e82f829faf147cb1de6f19621b83d57247cdefd7e0e02e",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "clock_hw_t",
+        "clock_resus_hw_t",
+        "fc_hw_t",
+        "clocks_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (clocks_hw_t) == 0x00d4, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "cc31009ce0f8604eaad6557fe233f29a6d2fb20785ebeddc22619fd0e746daa3",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "b4866b4d29a654a8fa99e24fe162bec7056262c10c31586610c6dc4794c008c5",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "b4866b4d29a654a8fa99e24fe162bec7056262c10c31586610c6dc4794c008c5",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "coresight_trace.h",
+      "sha256": "28bd06e896b5a2d65ffdae2d039a658f087983071ef144b88215773bdc5137df",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "coresight_trace_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (coresight_trace_hw_t) == 0x0008, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "da7e0b48e250d8c24d0bd715e13a072e8dd63ce5000ff864196fb9b85fd2245e",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "51b074c7f78b682779ca14a056fc0cacd1b1528adfa9fdd37eceb77c19f5c9c3",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "51b074c7f78b682779ca14a056fc0cacd1b1528adfa9fdd37eceb77c19f5c9c3",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "dma.h",
+      "sha256": "375c466332fdc020b9a245e29b3ef2433e541e58bbef6b3ef6b406eb3d4a680e",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "dma_channel_hw_t",
+        "dma_mpu_region_hw_t",
+        "dma_irq_ctrl_hw_t",
+        "dma_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (dma_hw_t) == 0x0544, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "6a752b67ebb5ad245862bbc4941035b9ec62137afd217b213289be18d96c81b1",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "c7269b28a85a62cf76c6d12a6fdb1d1e5a6d27c51669f8fe773c30348e8d7d35",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "c7269b28a85a62cf76c6d12a6fdb1d1e5a6d27c51669f8fe773c30348e8d7d35",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "dma_debug.h",
+      "sha256": "89d6bd47562477f76763c0c1377418585b99f1ec8661e6204768c305c4631bf0",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "dma_debug_channel_hw_t",
+        "dma_debug_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "9b7c59126fb6e09e16d3f138ff10c948d7b257875afd1ccce8263004a3077f83",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "c1e7768b36d5c34eb729af9ad73cfe1862596d190ef3f698dcfabba913f96399",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "c1e7768b36d5c34eb729af9ad73cfe1862596d190ef3f698dcfabba913f96399",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "glitch_detector.h",
+      "sha256": "23896ace5c0cd393404f3aeb68f13e58f27e55bfa9fef17290227fc5cd6ff719",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "glitch_detector_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (glitch_detector_hw_t) == 0x0018, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "38548dc0874c9be4921916526c7f8c1688668820e968e6eb5f5e785140b176b1",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "725d11058f477218c26f4f8d5efd557d1b8ccb111cd1d54f6a24f6f41035327c",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "725d11058f477218c26f4f8d5efd557d1b8ccb111cd1d54f6a24f6f41035327c",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "hstx_ctrl.h",
+      "sha256": "870be4b03c141436b41d78b96e1b9244f6de7f528b63ca3e7b4876774ea092e2",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "hstx_ctrl_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (hstx_ctrl_hw_t) == 0x002c, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "d57c864c5a3339d139c6d129345c2164ea573c2a8db50702d2b984f61e2e7b65",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "06cea1a9601141583c523674f456ce2545aa92d3cb51563bbb67f3b92d43e3ed",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "06cea1a9601141583c523674f456ce2545aa92d3cb51563bbb67f3b92d43e3ed",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "hstx_fifo.h",
+      "sha256": "a3f39e6e0020601c9a4f9dd1119ff5cccfb7249f7206d53f826772f4233d9d23",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "hstx_fifo_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (hstx_fifo_hw_t) == 0x0008, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "1b4fc02101be681fd266a71f08fc75b6d22e044dd4e1f0627c9b8ddd6476d8d0",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "739332939e9a5faaa13fbb82eadf7badf4bcda332c7f62c66b333fbb70d0c5a9",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "739332939e9a5faaa13fbb82eadf7badf4bcda332c7f62c66b333fbb70d0c5a9",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "i2c.h",
+      "sha256": "0b75057c8ddd1eb4a647703ec77f8e427a62900958a5560ee87ede2a81f7d397",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "i2c_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (i2c_hw_t) == 0x0100, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "b582b0cc81e7bf5f4be3e2659cec3aa4d93f1fd181d3740150fe52742312c36d",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "787193ff9bfb1a75a5ecce9a8704be96477d58f2daf50bcb5c590cb0eab062d3",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "787193ff9bfb1a75a5ecce9a8704be96477d58f2daf50bcb5c590cb0eab062d3",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "interp.h",
+      "sha256": "31a8caa8ead0f06a453d583c2c6d8284de9d2eb019abddf51aa5861bd1fff2ba",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "interp_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (interp_hw_t) == 0x0040, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "f82858a52a576a7346622914c6363873dd1137b37b17770c733767f55658a25f",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "7b3f5a04d07808b50b7e6280c77e434386bfb4419462fc9f9069f168dd74e645",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "7b3f5a04d07808b50b7e6280c77e434386bfb4419462fc9f9069f168dd74e645",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "io_bank0.h",
+      "sha256": "d7519de98ada19b39dcf66c0eca21f443afa370acb279018ffe24073f5729026",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "io_bank0_status_ctrl_hw_t",
+        "io_bank0_irq_ctrl_hw_t",
+        "io_bank0_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (io_bank0_hw_t) == 0x0320, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "755d9c103794ccfa9e08c724beae991c93db3acd03dc348967de9ea4ec8e53da",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "911d81bc5c3b29242fcc91aa619054bd9d8ced276d6ed6ac9fa5b817d699876c",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "911d81bc5c3b29242fcc91aa619054bd9d8ced276d6ed6ac9fa5b817d699876c",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "io_qspi.h",
+      "sha256": "5d471b6b6a32a12c0782b1a182fba14b1e19bccd1542b3a45c06e17a44c74bc5",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "io_qspi_status_ctrl_hw_t",
+        "io_qspi_irq_ctrl_hw_t",
+        "io_qspi_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (io_qspi_hw_t) == 0x0240, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "33ae7c1003d0f2bded4deee951dd34dc66f40328d9ae5768ba781b9d5c1eb7b2",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "ed33d81e278210ec24efebbdb1660a888a4896eac4d4b1f63435011fe8e0a374",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "ed33d81e278210ec24efebbdb1660a888a4896eac4d4b1f63435011fe8e0a374",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "iobank0.h",
+      "sha256": "269d8496a2b1737c0c6920f3aca08080eb5369a2c9a09655c354503b148c157a",
+      "kind": "compatibility-forwarder",
+      "direct_struct_typedefs": [],
+      "forwards_to": [
+        "io_bank0.h"
+      ],
+      "sdk_direct_static_assertions": [],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "35a4b0ca58ffd0962cd52b70c1c9f362286f16e3cc83dc20f2a07aed2f5d1784",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "f7b62a9446aded03dc660d2dd3f2c3c5b66efff315dda4c3c62a3518c36975c2",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "f7b62a9446aded03dc660d2dd3f2c3c5b66efff315dda4c3c62a3518c36975c2",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "ioqspi.h",
+      "sha256": "0348223fc3fee6e34bc0c4603b8ad92aeb573d2af4be51bee4bbda35fdb9347c",
+      "kind": "compatibility-forwarder",
+      "direct_struct_typedefs": [],
+      "forwards_to": [
+        "io_qspi.h"
+      ],
+      "sdk_direct_static_assertions": [],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "a51dd79c2a4afa9a16467bba9069708f749f3b5b78a5260e911aacbf569b9d47",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "0238e7fe6c5bbac4005084f54bc389fd7578f77eb650c1bfb2c9e7165a025aae",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "0238e7fe6c5bbac4005084f54bc389fd7578f77eb650c1bfb2c9e7165a025aae",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "m33.h",
+      "sha256": "0009f2424eb5fa0ae60ec1447eae0cf0c78991e4dc81a7951956a419c1809a2a",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "m33_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (m33_hw_t) == 0x43000, \"\");"
+      ],
+      "sdk_arm_only_guard": true,
+      "results": {
+        "arm": {
+          "unit_sha256": "1ec11d49b60e6f0c1cb02f910ee2f485356d438013409a2cb9d250648b3ba6c4",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "6fd22567e27e07037723a55c3d47e9032472a0b2a87c1c3ddd2700f6a14bc41e",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "6fd22567e27e07037723a55c3d47e9032472a0b2a87c1c3ddd2700f6a14bc41e",
+          "status": "rejected-by-sdk-arm-only-guard",
+          "diagnostic": "Arm header included in a RISC-V build with PICO_FORBID_ARM_HEADERS_ON_RISCV=1"
+        }
+      }
+    },
+    {
+      "header": "m33_eppb.h",
+      "sha256": "43bc2ce4f06d955f0a94c2a40b96f0c1d63e88a3e8267ff7238c981ae988440e",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "m33_eppb_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (m33_eppb_hw_t) == 0x000c, \"\");"
+      ],
+      "sdk_arm_only_guard": true,
+      "results": {
+        "arm": {
+          "unit_sha256": "35e63284fac79171f273c30f34f43de43fbd744c3f0a5a15f623577b3cac576e",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "a5fb2c69562b40f91ef29efd310c61b0d84266e25644d476eb322d1e66dc6579",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "a5fb2c69562b40f91ef29efd310c61b0d84266e25644d476eb322d1e66dc6579",
+          "status": "rejected-by-sdk-arm-only-guard",
+          "diagnostic": "Arm header included in a RISC-V build with PICO_FORBID_ARM_HEADERS_ON_RISCV=1"
+        }
+      }
+    },
+    {
+      "header": "mpu.h",
+      "sha256": "3a5984a9019056c2ce401036a613efb65db01b2a6d0a63bee4ae136e3d440c2c",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "mpu_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (mpu_hw_t) == 0x0038, \"\");"
+      ],
+      "sdk_arm_only_guard": true,
+      "results": {
+        "arm": {
+          "unit_sha256": "3bfabe713e667f79f38417da7a0f96e60f828d72640f3868b8bb48972de65386",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "9864c7df36959951ed95cc5e6494d1d4ac434851c77c79613c51b96a1ee4a025",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "9864c7df36959951ed95cc5e6494d1d4ac434851c77c79613c51b96a1ee4a025",
+          "status": "rejected-by-sdk-arm-only-guard",
+          "diagnostic": "Arm header included in a RISC-V build with PICO_FORBID_ARM_HEADERS_ON_RISCV=1"
+        }
+      }
+    },
+    {
+      "header": "nvic.h",
+      "sha256": "055377db8a40bd1356ffc401281be6ce5ee8c31758c4332ee0db43c53d22a490",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "nvic_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (nvic_hw_t) == 0x0340, \"\");"
+      ],
+      "sdk_arm_only_guard": true,
+      "results": {
+        "arm": {
+          "unit_sha256": "086bf0b49f7e47a63bae1e960a79233e40af99b69fc30747d399aef0bede736e",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "c1c4fdf79148a5507a724b2bc49b5d8d4b4ce885589f43d73a0bc188894f7838",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "c1c4fdf79148a5507a724b2bc49b5d8d4b4ce885589f43d73a0bc188894f7838",
+          "status": "rejected-by-sdk-arm-only-guard",
+          "diagnostic": "Arm header included in a RISC-V build with PICO_FORBID_ARM_HEADERS_ON_RISCV=1"
+        }
+      }
+    },
+    {
+      "header": "otp.h",
+      "sha256": "294c07a7c27f02784472f8d066f33f2e935412ea8c7341696e9b9c6cd2e44463",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "otp_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (otp_hw_t) == 0x0174, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "a5d09ad04bf39f321ec61a2016f21f4fca8447edc326b3b74f2dc903da4ab78c",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "a01ca6caa4c3a695c821a75fdd6385e5ed6a4137e9a2c82e47a628bf73702933",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "a01ca6caa4c3a695c821a75fdd6385e5ed6a4137e9a2c82e47a628bf73702933",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "pads_bank0.h",
+      "sha256": "dad7f09b38cea700a9088349d697427486fb146bed59699ea582352b580d3250",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "pads_bank0_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (pads_bank0_hw_t) == 0x00c4, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "d6ecc2d9adc030dd6377b850bce42e6f29977240273330d4fcc31918b86bbc84",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "30cbe64889281d4f6bdfffe1839d3cadeb64a6aeef13391fee50dcecc82ca07b",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "30cbe64889281d4f6bdfffe1839d3cadeb64a6aeef13391fee50dcecc82ca07b",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "pads_qspi.h",
+      "sha256": "e0c32806145ef6e7433ca9da466c7ce6a9946b4e36d6502a031c824e37057714",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "pads_qspi_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (pads_qspi_hw_t) == 0x001c, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "f0e3287ac4a279753e88b043120bb6f370012314e2cb8f5e61949bf3d9e5a781",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "7881a889f53d9de15fcc63e70d27d50b8591a3acf50b608d2f6fca2271e6cc11",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "7881a889f53d9de15fcc63e70d27d50b8591a3acf50b608d2f6fca2271e6cc11",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "padsbank0.h",
+      "sha256": "87a2f89f78a35b6a2df7a7bb3979da76a08228af5646d17e5f797bf9d5f5f470",
+      "kind": "compatibility-forwarder",
+      "direct_struct_typedefs": [],
+      "forwards_to": [
+        "pads_bank0.h"
+      ],
+      "sdk_direct_static_assertions": [],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "75a52ada070bc83c45a6b3a28ca7b5e78ee6e379248f1c525c5c5b79632ae19c",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "30c08802190578272ed717aeac2b881815a0d5671fa3f34db249ed29113ac8a3",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "30c08802190578272ed717aeac2b881815a0d5671fa3f34db249ed29113ac8a3",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "pio.h",
+      "sha256": "91abb9bfaefb7e28b93ce15ab00542d9fb112879b176ae6db578979504d15aff",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "pio_sm_hw_t",
+        "pio_irq_ctrl_hw_t",
+        "pio_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (pio_hw_t) == 0x0188, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "886fddeb36d374bf4d08b3001b3f99d90c5efb12c2ad7c3eb0ef654f4197ad8a",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "aefbba9c3c31107cea83e07af14d57073687988a910d869b377a994416108d33",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "aefbba9c3c31107cea83e07af14d57073687988a910d869b377a994416108d33",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "pll.h",
+      "sha256": "216fde7e2f6564579ce922acacee40b75a4803d5e3350efae97a5dc40bd16575",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "pll_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (pll_hw_t) == 0x0020, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "2533674bc13b196ad355669b9015da9ac16b86a3c1fefd0ba9fb389159485952",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "e5d8502ca5cf8d2c11d3aa1d82636a9ab88a63365363f29bfa62d602dab5a3dd",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "e5d8502ca5cf8d2c11d3aa1d82636a9ab88a63365363f29bfa62d602dab5a3dd",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "powman.h",
+      "sha256": "6a849d307661b7e3f3fc8f93b063ef102d1678fe63290a9d58f8989f7f505954",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "powman_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (powman_hw_t) == 0x00f0, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "e17b62925eca2162edb1106affa8ed398405e4acfdf68e4644b420ec4f6c41c5",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "18ac5fc8777c3ca2fea3dc6ad5582bc1f3cc9038ad2cd1ce334e1f2e73e943be",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "18ac5fc8777c3ca2fea3dc6ad5582bc1f3cc9038ad2cd1ce334e1f2e73e943be",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "psm.h",
+      "sha256": "4bd733a9e0a0186a39f8c1ed608d77e10e430e376951ab9b0940b00efee301e3",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "psm_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (psm_hw_t) == 0x0010, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "df5eaa0e50c1add815d3184e60b787b55893d4af2f45c2eb22409d0ab162aaf6",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "c5514cd2488793ab2360d879a4badc29f060dd8ca9e677d79b61117bfba0c25b",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "c5514cd2488793ab2360d879a4badc29f060dd8ca9e677d79b61117bfba0c25b",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "pwm.h",
+      "sha256": "5df6a8d61fb7c78076b2d2c9a8decdfc443dc51b85028d70710c8823a95b3b1e",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "pwm_slice_hw_t",
+        "pwm_irq_ctrl_hw_t",
+        "pwm_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (pwm_hw_t) == 0x0110, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "619a7296f8e764de62fb8a73d7383f813c63d18e21f0a105b20ef1aa1f0ebb05",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "89bf44662b30aa685c5e9cc10bb23c95245380f6495b0af723dff78877171fad",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "89bf44662b30aa685c5e9cc10bb23c95245380f6495b0af723dff78877171fad",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "qmi.h",
+      "sha256": "0c6d3ce47be91e89321e34202151d91c330333461efb87ec2e04278d684c2624",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "qmi_mem_hw_t",
+        "qmi_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (qmi_hw_t) == 0x0054, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "14a31d141fddbaed8d239826070326a1f9d29ee3d2e4b6265f144643bb2baa48",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "2349bafc13223b5a61ea80c262be633d717b2d317c2af5b9cd444b5d429afb71",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "2349bafc13223b5a61ea80c262be633d717b2d317c2af5b9cd444b5d429afb71",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "resets.h",
+      "sha256": "a07bcb91924fb60873547c99a6c6fa6a485d05498cc7ed0c0dd7a4cb7ee7e597",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "resets_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (resets_hw_t) == 0x000c, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "80888c29ec9d8d73ad61b29611b3443c76b9f0afbc96af226b2bf495a4816ca9",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "bef44f5cc712e1f08a9e57b89944f134e85e3e97b42261fff0198a93bae55ed0",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "bef44f5cc712e1f08a9e57b89944f134e85e3e97b42261fff0198a93bae55ed0",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "rosc.h",
+      "sha256": "caac88606b0aa27c36db9c5564cf8122c6a7df6faa8f60ae54f772d2e849df79",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "rosc_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (rosc_hw_t) == 0x0028, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "d02d1bb383553cd8118c4fb67459eee94e528e28b8254dc90dafc2bfae449484",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "d33c15a6c9d99182c3bf01f44c808c5b72311acdd43d225e343cb71231e3f81c",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "d33c15a6c9d99182c3bf01f44c808c5b72311acdd43d225e343cb71231e3f81c",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "sau.h",
+      "sha256": "0d32e0e4ee0af985ffe6f712735e068fb0d082e658ecdb8bae3e1c3704478485",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "armv8m_sau_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (armv8m_sau_hw_t) == 0x0014, \"\");"
+      ],
+      "sdk_arm_only_guard": true,
+      "results": {
+        "arm": {
+          "unit_sha256": "73b9926b901b8cfea8e5586d188b5457dc197a1351ee18627e89924dae79bc99",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "5beb5854ba5a9a94de2f13b3635b8076b1adba42102a3a54cfdbe71719a900f2",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "5beb5854ba5a9a94de2f13b3635b8076b1adba42102a3a54cfdbe71719a900f2",
+          "status": "rejected-by-sdk-arm-only-guard",
+          "diagnostic": "Arm header included in a RISC-V build with PICO_FORBID_ARM_HEADERS_ON_RISCV=1"
+        }
+      }
+    },
+    {
+      "header": "scb.h",
+      "sha256": "99f3f778d3a5328e652f06fd359df53142b5d6798f809d5d6de06e019378f9f8",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "armv8m_scb_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (armv8m_scb_hw_t) == 0x0090, \"\");"
+      ],
+      "sdk_arm_only_guard": true,
+      "results": {
+        "arm": {
+          "unit_sha256": "5a0b28a67760dc0f342489f69cda6f69737c7227b55e080733830416c1ed3aa3",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "8014b4a74d7405d3f7c7f197256b4026112ad5f3259550a309054b978c69320c",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "8014b4a74d7405d3f7c7f197256b4026112ad5f3259550a309054b978c69320c",
+          "status": "rejected-by-sdk-arm-only-guard",
+          "diagnostic": "Arm header included in a RISC-V build with PICO_FORBID_ARM_HEADERS_ON_RISCV=1"
+        }
+      }
+    },
+    {
+      "header": "sha256.h",
+      "sha256": "7757e194ca1e5b8cd31e82b6f21a5e0ac9f148fe29c89775db9382e1bac9e316",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "sha256_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (sha256_hw_t) == 0x0028, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "f3fca60fc25994b87428003e4dadef7178dd6e5e443e08195d1dd260838cb1c3",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "a031a4353aff0cd655ef0fb48709d1f4731b5858388fda1e18d51162302a385a",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "a031a4353aff0cd655ef0fb48709d1f4731b5858388fda1e18d51162302a385a",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "sio.h",
+      "sha256": "4238ccd1fb9dc2a697b1068e388883c07cfc3fb186cde691f9e4685afcb9af9f",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "sio_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (sio_hw_t) == 0x01e8, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "1d2f32404840da5a3d10daf061729338d3b9f2d8c467e6e83e91578c7392f7f1",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "70932fb4978636b92b00ce18b6f7cde0487e2b2a27310259150a82cb9f9020de",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "70932fb4978636b92b00ce18b6f7cde0487e2b2a27310259150a82cb9f9020de",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "spi.h",
+      "sha256": "bfe2a77c056b8101b6d7829ba05141a49695f789293044ee3a19abde27c3f255",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "spi_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (spi_hw_t) == 0x0028, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "75a27c97305499bbff171a82ea6876c048d2f94dfe90ccbe5ab1aaab0634fee8",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "14cadf1f58d5f76cd0a897949382423f9695dc18bc2bfd0ab83c1179859b1a0d",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "14cadf1f58d5f76cd0a897949382423f9695dc18bc2bfd0ab83c1179859b1a0d",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "syscfg.h",
+      "sha256": "f296905e3f873e14149bbcd673bc9093635d065e2339837127b1da073703386f",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "syscfg_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (syscfg_hw_t) == 0x0018, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "0d9be43431eda0a4dc5f91f56c4530896603897b054f94b865fe1d8508c6c107",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "94319c3374d1f41c1e037c7a9f500649e5a412cb93577267b32d601db7163366",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "94319c3374d1f41c1e037c7a9f500649e5a412cb93577267b32d601db7163366",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "sysinfo.h",
+      "sha256": "667e1bce9b819d35cc1adeec53a9c4e2542396cd6fe745e836609b7c9a97f0cf",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "sysinfo_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (sysinfo_hw_t) == 0x0018, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "dd99ffb4cbd7625e74bd474dbcf67f9e2f34ed75c7ba3ca18f95121673766ffa",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "8be0bb9161763c3675dc61a49a2d4bc682c7ccea8f35d3e26d067290397dde90",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "8be0bb9161763c3675dc61a49a2d4bc682c7ccea8f35d3e26d067290397dde90",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "systick.h",
+      "sha256": "5e1bc7ec29721ff70e38ce0697ec64b7c5cd0d746a1ed4883b9835bbd8f595b6",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "systick_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (systick_hw_t) == 0x0010, \"\");"
+      ],
+      "sdk_arm_only_guard": true,
+      "results": {
+        "arm": {
+          "unit_sha256": "e9ad658231b3a5c5c633f95c45192de7bab4eadce66cf875d7096d2898d67aac",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "1d2fae55c83b07acf2d7e6c54306a240a61f5cccb9b12a42dbdc06a6778541d1",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "1d2fae55c83b07acf2d7e6c54306a240a61f5cccb9b12a42dbdc06a6778541d1",
+          "status": "rejected-by-sdk-arm-only-guard",
+          "diagnostic": "Arm header included in a RISC-V build with PICO_FORBID_ARM_HEADERS_ON_RISCV=1"
+        }
+      }
+    },
+    {
+      "header": "tbman.h",
+      "sha256": "c6f84c72ef816a5a4013d09044ee1cc22e0e4db7216495ff354c6b300a6aa287",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "tbman_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (tbman_hw_t) == 0x0004, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "f9873ba746a1bef70d4e87edb97b6986ab8cb735b6f58c20e8146d274dbd7c84",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "e979c15e902ee7cfe8e2e83913536d3eb2a96d115fa6a4e95c09411ad423d789",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "e979c15e902ee7cfe8e2e83913536d3eb2a96d115fa6a4e95c09411ad423d789",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "ticks.h",
+      "sha256": "22df86f48941fbeee696d6ed50057038ef495de976db11647ac4348ab729c27c",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "ticks_slice_hw_t",
+        "ticks_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (ticks_hw_t) == 0x0048, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "7604e67a6dc17cf4532644874a486c4933f3ca3c228cce74e07111750153b10e",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "0a6c28eed867e834613bfd854fd7701c80f08f5532e546a4769cbfd144001523",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "0a6c28eed867e834613bfd854fd7701c80f08f5532e546a4769cbfd144001523",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "timer.h",
+      "sha256": "2fc1dbc49284a51dcd6c2797caac8ecbce6f18d66a4aa3bddd276cb1c0239311",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "timer_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (timer_hw_t) == 0x004c, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "8292b9b85a88f252520010530f768d1f0632f06bb41ae67066a7bcdec6ea071c",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "b93cda153f411b08c76882f3fe4f92d3493afec40a4cc27cbb15104b1a5382a4",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "b93cda153f411b08c76882f3fe4f92d3493afec40a4cc27cbb15104b1a5382a4",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "tmds_encode.h",
+      "sha256": "c39d0496b788d89d21d1fc006f7e7ebeeb03c2cbff37003e5082a21bc04913b3",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "tmds_encode_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (tmds_encode_hw_t) == 0x0028, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "31a07999cde8d18046eef4d18e4163cda47a4c19d5bc6b5698e8463e24aae339",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "3ebeaa4173473e156e21c90d2461d4b0aece7d1053143772f9940b5197ceb8bf",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "3ebeaa4173473e156e21c90d2461d4b0aece7d1053143772f9940b5197ceb8bf",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "trng.h",
+      "sha256": "d13e2d7c9d2546f55fcd91816298cdc7b8b7b9db9822c242aaad458d02c5b06d",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "trng_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (trng_hw_t) == 0x00ec, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "c773689c650f2a5b467997022aca9b08e723f566e9e3bdfa9de43c0ff9d76633",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "05c679eab57331ce3bdab2f177f0102eb203d5893abdb43b1c24c9d24320bc44",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "05c679eab57331ce3bdab2f177f0102eb203d5893abdb43b1c24c9d24320bc44",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "uart.h",
+      "sha256": "b17b0425a4d660e3f53d93d738f4b80194184aa96834624e62b3e0bcec0d5e13",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "uart_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (uart_hw_t) == 0x004c, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "b8eadbecc598624ac66466390072798d3b6bf4841fb05521d81d6db36367fd52",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "0ac796f5f4659be076fca4e001af13d939e5f21ebd7ddcf07e6dd3fa94c909d6",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "0ac796f5f4659be076fca4e001af13d939e5f21ebd7ddcf07e6dd3fa94c909d6",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "usb.h",
+      "sha256": "b7ff43561b4f70232e3e91f417bd23d6efe451c4247ccb32425e5f7bca5ea84b",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "usb_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (usb_hw_t) == 0x0118, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "ad3d1b6efd3e9c7641a6d96e97087a613ca706d499582bfaf7f9423ecd02e332",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "f54f94f513424f6a23b313dd775a82ad0ca473d9b7bc1bd2c1fd9b461c17f5ad",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "f54f94f513424f6a23b313dd775a82ad0ca473d9b7bc1bd2c1fd9b461c17f5ad",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "usb_dpram.h",
+      "sha256": "c3569ca6b87a21b81585d4ca5d1e7cd9c7d5d61dbdddc7e6f2f69f539f2c96db",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "usb_device_dpram_t",
+        "usb_host_dpram_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof(usb_device_dpram_t) == USB_DPRAM_MAX, \"\");",
+        "static_assert(offsetof(usb_device_dpram_t, epx_data) == 0x180, \"\");",
+        "static_assert(sizeof(usb_host_dpram_t) == USB_DPRAM_MAX, \"\");",
+        "static_assert(offsetof(usb_host_dpram_t, epx_data) == 0x180, \"\");",
+        "static_assert( USB_HOST_INTERRUPT_ENDPOINTS == 15, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "4fa3207bf7d3f20e50ea42c8c54df7cd3b944565670a5170051cbdf6f53815a1",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "feb8604cedc17af6ddfc08995290db1e15e771f1c8f17a1da2b0b7fd97ca95e4",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "feb8604cedc17af6ddfc08995290db1e15e771f1c8f17a1da2b0b7fd97ca95e4",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "watchdog.h",
+      "sha256": "4101c847575de641c352030947d034d8930672e93846799745b342bb88f9b89d",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "watchdog_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (watchdog_hw_t) == 0x002c, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "ac63d99473f14b78d7fe7d430e8d1952ece3b19a982058ea3e5422ff357c5598",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "ff777009500f630d3bb276a3fdc080cf66f49c66d0a71b9cdbe524143218047a",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "ff777009500f630d3bb276a3fdc080cf66f49c66d0a71b9cdbe524143218047a",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "xip.h",
+      "sha256": "f3b5f30f51b5de35710eb4abb0292b86d56f07e0ae10c0c05acc2e0d8f4ee104",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "xip_ctrl_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (xip_ctrl_hw_t) == 0x0020, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "ae63d7a19d3563a78f49d647afec7ae8a8f5058ef0eec0be4d7127569ca8e776",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "4eecd0586ce7da821f94bccc19ed38e16c59d9fcd7e4c3a49910dc443a6779c5",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "4eecd0586ce7da821f94bccc19ed38e16c59d9fcd7e4c3a49910dc443a6779c5",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "xip_aux.h",
+      "sha256": "0467549daaccb512b8779bdf2abf72726144d5b702e9d8eedafffbb6abb230ca",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "xip_aux_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (xip_aux_hw_t) == 0x000c, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "78f53f3e1041e2d7660921d5eb8cc826d925b4864cf0148b03d35aa9fdb15502",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "2e5acad9c7c1ea233648abb4772ff0c98458832027f3c1995e5e471f7c2c6cf9",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "2e5acad9c7c1ea233648abb4772ff0c98458832027f3c1995e5e471f7c2c6cf9",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "xip_ctrl.h",
+      "sha256": "a1c3fcf5256a25c4ce31d493d8cfaa07524e11ec91807d92ec787a26adbe3076",
+      "kind": "compatibility-forwarder",
+      "direct_struct_typedefs": [],
+      "forwards_to": [
+        "xip.h"
+      ],
+      "sdk_direct_static_assertions": [],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "c1ce5df6a0ba50f4c1fc3c9aca56b885d65d15f692546097fa1c9998f2e06f15",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "2eb803e4a737edf6a5d41617129b5934fa2f1e21a3fe179818f3f1bdfa34aeb2",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "2eb803e4a737edf6a5d41617129b5934fa2f1e21a3fe179818f3f1bdfa34aeb2",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    },
+    {
+      "header": "xosc.h",
+      "sha256": "3fb055ebe24bc53bf372c1d3bc3df2452efb6d9640d3f4c32ca8fb420145e4cd",
+      "kind": "structure",
+      "direct_struct_typedefs": [
+        "xosc_hw_t"
+      ],
+      "forwards_to": [],
+      "sdk_direct_static_assertions": [
+        "static_assert(sizeof (xosc_hw_t) == 0x0014, \"\");"
+      ],
+      "sdk_arm_only_guard": false,
+      "results": {
+        "arm": {
+          "unit_sha256": "ae8219110a9712c1ce036f679bf4aa7167ae552baf7798e3ab036c2e85e9aecc",
+          "status": "compiled",
+          "object_sha256": "e1c2453e5dc1c7f8923df6c3caaf181cf7fc8dc80663d2d9687aee76051c61e6"
+        },
+        "riscv": {
+          "unit_sha256": "8b662b5e00a5dbc4c0629b775ea69a6622fa73377a619ba232fa724dca8207b4",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        },
+        "riscv_strict": {
+          "unit_sha256": "8b662b5e00a5dbc4c0629b775ea69a6622fa73377a619ba232fa724dca8207b4",
+          "status": "compiled",
+          "object_sha256": "517c4ec2e5c3cb0a192bc1f020f1a8eb6a46d8c3cb890b233007d1a2ae7affde"
+        }
+      }
+    }
+  ]
+}

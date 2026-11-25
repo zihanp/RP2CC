@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "kernels": [
+    {
+      "name": "scale_pair",
+      "args": [
+        "x"
+      ],
+      "body": [
+        "floor2",
+        "x"
+      ]
+    }
+  ]
+}

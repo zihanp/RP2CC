@@ -1,0 +1,23 @@
+{
+  "format": "rp2cc.math-front.v1",
+  "source_sha256": "37ac3ebbe79309d3e95f62bd79af5f5529e9c31c7d2942b64b628b721a92e97c",
+  "ir_canonical_sha256": "53b914ffe34dcf26a504fffea51637581e5f82f3a8633f6a1d78c459fd72191c",
+  "recurrences": [
+    {
+      "kernel": "affine",
+      "line": 7,
+      "state": "x",
+      "iterations": 257,
+      "multiplier": 1664525,
+      "increment": 1013904223
+    },
+    {
+      "kernel": "three_step",
+      "line": 17,
+      "state": "y",
+      "iterations": 3,
+      "multiplier": 7,
+      "increment": 11
+    }
+  ]
+}

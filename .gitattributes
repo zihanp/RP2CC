@@ -1,0 +1,10 @@
+# Releases link exact file bytes to Lean certificates and benchmark receipts.
+# Preserve the checked-in bytes even on a Git installation with autocrlf enabled.
+* -text
+*.elf binary
+*.uf2 binary
+*.bin binary
+*.pdf binary
+*.pptx binary
+*.png binary
+*.zip binary

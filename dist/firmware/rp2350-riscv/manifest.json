@@ -1,0 +1,50 @@
+{
+  "architecture": "riscv",
+  "kind": "flash",
+  "family_id": "0xe48bff5a",
+  "uf2_bytes": 17408,
+  "payload_pages": 33,
+  "first": "0x10000000",
+  "end_exclusive": "0x10002100",
+  "e10_marker": "0x103fff00",
+  "elf_machine": 243,
+  "elf_entry": "0x10000034",
+  "elf_load_bytes_compared": 8228,
+  "verified_uf2_payload_bytes": 8448,
+  "board": "rp2350",
+  "sdk_board": "rp2lab_2350",
+  "flash_capacity_bytes": 4194304,
+  "option": "O3",
+  "sdk_version": "2.3.1",
+  "gcc": "riscv32-pico-elf-gcc.exe (ga690b2cf8) 16.1.0",
+  "capability_smoke": false,
+  "usb_stdio": false,
+  "generated_c_sha256": "dcafd18b09aecb07439f5ee65a58c83661d0e7476d1562395f4db5322cdd77c3",
+  "files": {
+    "rp_lab.bin": {
+      "bytes": 8228,
+      "sha256": "8443663634e4fdb4a671ffa4e6f221c6491ba4cf516d1364a784e02356050003"
+    },
+    "rp_lab.elf": {
+      "bytes": 35276,
+      "sha256": "d02fb1f7729e9665ad35e0aed3d966ee5171af0ba16bcf1025c21122c792ea8b"
+    },
+    "rp_lab.uf2": {
+      "bytes": 17408,
+      "sha256": "e796cfb953a967b0616e5cba4a7b8d600e4fb066407923283395ac849a64e551"
+    }
+  },
+  "elf_release": {
+    "original_sha256": "0cb4807a9a1d7ebbd9dc07452643e411dd6e62fa5823876f78da361cbbd4f30d",
+    "debug_sections_cleared": [
+      ".debug_line",
+      ".debug_line_str",
+      ".debug_info",
+      ".debug_abbrev",
+      ".debug_aranges",
+      ".debug_str",
+      ".debug_rnglists"
+    ],
+    "entry_and_load_segments_unchanged": true
+  }
+}

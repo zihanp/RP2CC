@@ -1,0 +1,203 @@
+{
+  "sha256": "e5ff3f1d98953e2b4dc5433d26b46740de22ccfe1dda55aa3bb2d44eecb8439a",
+  "arch": "riscv",
+  "segments": [
+    {
+      "paddr": "0x20000000",
+      "vaddr": "0x20000000",
+      "memsz": 37508,
+      "filesz": 27480
+    }
+  ],
+  "symbols": {
+    "bs_affine": {
+      "address": "0x20000b22",
+      "symbol_bytes": 30,
+      "bytes_hex": "37671900b7f76e3c930610101307d7609387f735599dfd163e95edfe8280",
+      "disassembly": [
+        "20000b22  37671900  lui a4,0x196",
+        "20000b26  b7f76e3c  lui a5,0x3c6ef",
+        "20000b2a  93061010  li a3,257",
+        "20000b2e  1307d760  addi a4,a4,1549 # 19660d <__ram_window_size+0x11460d>",
+        "20000b32  9387f735  addi a5,a5,863 # 3c6ef35f <__StackTop+0x1c66d35f>",
+        "20000b36  599d      mul a0,a0,a4",
+        "20000b38  fd16      addi a3,a3,-1 # efff <XIP_RAM_LENGTH+0xafff>",
+        "20000b3a  3e95      add a0,a0,a5",
+        "20000b3c  edfe      bnez a3,20000b36 <bs_affine+0x14>",
+        "20000b3e  8280      ret"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "hand_identity": {
+      "address": "0x20000b6e",
+      "symbol_bytes": 2,
+      "bytes_hex": "8280",
+      "disassembly": [
+        "20000b6e  8280      ret"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "op_floor2": {
+      "address": "0x20000b40",
+      "symbol_bytes": 24,
+      "bytes_hex": "3717ff0f7d171181b787007893870780798d3e953d8d8280",
+      "disassembly": [
+        "20000b40  3717ff0f  lui a4,0xfff1",
+        "20000b44  7d17      addi a4,a4,-1 # fff0fff <__ram_window_size+0xff6efff>",
+        "20000b46  1181      srli a0,a0,0x4",
+        "20000b48  b7870078  lui a5,0x78008",
+        "20000b4c  93870780  addi a5,a5,-2048 # 78007800 <__StackTop+0x57f85800>",
+        "20000b50  798d      and a0,a0,a4",
+        "20000b52  3e95      add a0,a0,a5",
+        "20000b54  3d8d      xor a0,a0,a5",
+        "20000b56  8280      ret"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "b3_affine": {
+      "address": "0x20000ade",
+      "symbol_bytes": 30,
+      "bytes_hex": "b766190037f76e3c9386d6601307f73593071010559dfd173a95edff8280",
+      "disassembly": [
+        "20000ade  b7661900  lui a3,0x196",
+        "20000ae2  37f76e3c  lui a4,0x3c6ef",
+        "20000ae6  9386d660  addi a3,a3,1549 # 19660d <__ram_window_size+0x11460d>",
+        "20000aea  1307f735  addi a4,a4,863 # 3c6ef35f <__StackTop+0x1c66d35f>",
+        "20000aee  93071010  li a5,257",
+        "20000af2  559d      mul a0,a0,a3",
+        "20000af4  fd17      addi a5,a5,-1",
+        "20000af6  3a95      add a0,a0,a4",
+        "20000af8  edff      bnez a5,20000af2 <b3_affine+0x14>",
+        "20000afa  8280      ret"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "b2_affine": {
+      "address": "0x20000a98",
+      "symbol_bytes": 30,
+      "bytes_hex": "b766190037f76e3c9386d6601307f73593071010559dfd173a95edff8280",
+      "disassembly": [
+        "20000a98  b7661900  lui a3,0x196",
+        "20000a9c  37f76e3c  lui a4,0x3c6ef",
+        "20000aa0  9386d660  addi a3,a3,1549 # 19660d <__ram_window_size+0x11460d>",
+        "20000aa4  1307f735  addi a4,a4,863 # 3c6ef35f <__StackTop+0x1c66d35f>",
+        "20000aa8  93071010  li a5,257",
+        "20000aac  559d      mul a0,a0,a3",
+        "20000aae  fd17      addi a5,a5,-1",
+        "20000ab0  3a95      add a0,a0,a4",
+        "20000ab2  edff      bnez a5,20000aac <b2_affine+0x14>",
+        "20000ab4  8280      ret"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "b2_floor2": {
+      "address": "0x20000a70",
+      "symbol_bytes": 40,
+      "bytes_hex": "3d669356f5411357f548f18e93554501b34705083307e04033e5b600718f91835d8f4205598d8280",
+      "disassembly": [
+        "20000a70  3d66      lui a2,0xf",
+        "20000a72  9356f541  srai a3,a0,0x1f",
+        "20000a76  1357f548  bexti a4,a0,0xf",
+        "20000a7a  f18e      and a3,a3,a2",
+        "20000a7c  93554501  srli a1,a0,0x14",
+        "20000a80  b3470508  zext.h a5,a0",
+        "20000a84  3307e040  neg a4,a4",
+        "20000a88  33e5b600  or a0,a3,a1",
+        "20000a8c  718f      and a4,a4,a2",
+        "20000a8e  9183      srli a5,a5,0x4",
+        "20000a90  5d8f      or a4,a4,a5",
+        "20000a92  4205      slli a0,a0,0x10",
+        "20000a94  598d      or a0,a0,a4",
+        "20000a96  8280      ret"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "hand_floor2": {
+      "address": "0x20000b70",
+      "symbol_bytes": 14,
+      "bytes_hex": "931755609187518533c5a7088280",
+      "disassembly": [
+        "20000b70  93175560  sext.h a5,a0",
+        "20000b74  9187      srai a5,a5,0x4",
+        "20000b76  5185      srai a0,a0,0x14",
+        "20000b78  33c5a708  pack a0,a5,a0",
+        "20000b7c  8280      ret"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "bs_floor2": {
+      "address": "0x20000afc",
+      "symbol_bytes": 38,
+      "bytes_hex": "bd6613564501334705089357f5411355f548f58f3305a040d18f758d1183c207598d5d8d8280",
+      "disassembly": [
+        "20000afc  bd66      lui a3,0xf",
+        "20000afe  13564501  srli a2,a0,0x14",
+        "20000b02  33470508  zext.h a4,a0",
+        "20000b06  9357f541  srai a5,a0,0x1f",
+        "20000b0a  1355f548  bexti a0,a0,0xf",
+        "20000b0e  f58f      and a5,a5,a3",
+        "20000b10  3305a040  neg a0,a0",
+        "20000b14  d18f      or a5,a5,a2",
+        "20000b16  758d      and a0,a0,a3",
+        "20000b18  1183      srli a4,a4,0x4",
+        "20000b1a  c207      slli a5,a5,0x10",
+        "20000b1c  598d      or a0,a0,a4",
+        "20000b1e  5d8d      or a0,a0,a5",
+        "20000b20  8280      ret"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "b3_floor2": {
+      "address": "0x20000ab6",
+      "symbol_bytes": 40,
+      "bytes_hex": "3d669356f5411357f548f18e93554501b34705083307e04033e5b600718f91835d8f4205598d8280",
+      "disassembly": [
+        "20000ab6  3d66      lui a2,0xf",
+        "20000ab8  9356f541  srai a3,a0,0x1f",
+        "20000abc  1357f548  bexti a4,a0,0xf",
+        "20000ac0  f18e      and a3,a3,a2",
+        "20000ac2  93554501  srli a1,a0,0x14",
+        "20000ac6  b3470508  zext.h a5,a0",
+        "20000aca  3307e040  neg a4,a4",
+        "20000ace  33e5b600  or a0,a3,a1",
+        "20000ad2  718f      and a4,a4,a2",
+        "20000ad4  9183      srli a5,a5,0x4",
+        "20000ad6  5d8f      or a4,a4,a5",
+        "20000ad8  4205      slli a0,a0,0x10",
+        "20000ada  598d      or a0,a0,a4",
+        "20000adc  8280      ret"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "op_affine": {
+      "address": "0x20000b58",
+      "symbol_bytes": 22,
+      "bytes_hex": "3767a6461307d7a0b7579fe8599d9387f7453e958280",
+      "disassembly": [
+        "20000b58  3767a646  lui a4,0x46a66",
+        "20000b5c  1307d7a0  addi a4,a4,-1523 # 46a65a0d <__StackTop+0x269e3a0d>",
+        "20000b60  b7579fe8  lui a5,0xe89f5",
+        "20000b64  599d      mul a0,a0,a4",
+        "20000b66  9387f745  addi a5,a5,1119 # e89f545f <__StackTop+0xc897345f>",
+        "20000b6a  3e95      add a0,a0,a5",
+        "20000b6c  8280      ret"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    },
+    "hand_affine": {
+      "address": "0x20000b7e",
+      "symbol_bytes": 22,
+      "bytes_hex": "3767a6461307d7a0b7579fe8599d9387f7453e958280",
+      "disassembly": [
+        "20000b7e  3767a646  lui a4,0x46a66",
+        "20000b82  1307d7a0  addi a4,a4,-1523 # 46a65a0d <__StackTop+0x269e3a0d>",
+        "20000b86  b7579fe8  lui a5,0xe89f5",
+        "20000b8a  599d      mul a0,a0,a4",
+        "20000b8c  9387f745  addi a5,a5,1119 # e89f545f <__StackTop+0xc897345f>",
+        "20000b90  3e95      add a0,a0,a5",
+        "20000b92  8280      ret"
+      ],
+      "disassembly_source": "target GNU objdump; every byte verified against linked ELF, includes explicit data directives"
+    }
+  }
+}

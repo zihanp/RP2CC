@@ -1,0 +1,96 @@
+{
+  "artifacts": {
+    "baseline": {
+      "baseline_pool_bytes": 148,
+      "c_and_h_sha256": {
+        "kernels.c": "cfa580805f4099226f116d214591ef2b689ec501180386114407003a13d03205",
+        "kernels.h": "2039d25662e4d59f0e2e6d4b51e7c80838826393edc5d2f9d9302f7f960df746"
+      },
+      "fallback": [],
+      "kernels": 4,
+      "mode": "baseline",
+      "pool_alignment_length_gcd_bytes": 4,
+      "pool_bytes": 148,
+      "pool_distinct_octets": 83,
+      "pool_longest_blob_bytes": 64,
+      "pool_lower_bound_bytes": 84,
+      "pool_optimal": false,
+      "rules": {}
+    },
+    "optimized": {
+      "baseline_pool_bytes": 148,
+      "c_and_h_sha256": {
+        "kernels.c": "dcafd18b09aecb07439f5ee65a58c83661d0e7476d1562395f4db5322cdd77c3",
+        "kernels.h": "2039d25662e4d59f0e2e6d4b51e7c80838826393edc5d2f9d9302f7f960df746"
+      },
+      "fallback": [],
+      "kernels": 4,
+      "mode": "optimized",
+      "pool_alignment_length_gcd_bytes": 4,
+      "pool_bytes": 84,
+      "pool_distinct_octets": 83,
+      "pool_longest_blob_bytes": 64,
+      "pool_lower_bound_bytes": 84,
+      "pool_optimal": true,
+      "rules": {
+        "affine.jump": 1,
+        "cancel.u32": 1,
+        "fold.u32": 1,
+        "swar.floor2.bias": 1
+      }
+    }
+  },
+  "format": "rp2cc.host-audit.v1",
+  "host_c_compiler": "gcc.EXE (Rev5, Built by MSYS2 project) 16.1.0",
+  "host_case_counts": {
+    "affine_cases": 4096,
+    "blob_value_cases": 1548,
+    "calibrated_cases": 4096,
+    "compiled_variants": 2,
+    "floor_word_cases": 131216,
+    "restore_cases": 4096,
+    "unique_values_per_lane": 65536
+  },
+  "host_flags": [
+    "-std=c11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "(no LTO)"
+  ],
+  "notes": [
+    "Each of two C variants was linked as a separate translation unit with the same host -O2.",
+    "floor_word_cases counts paired input calls, not unique u32 words proven by testing.",
+    "Host correctness evidence only: not RP235x execution time or actual MCU peripheral behavior."
+  ],
+  "python": "3.14.3",
+  "result": "PASS",
+  "source": "examples/bench.json",
+  "source_canonical_sha256": "7267113e9a572e5f5cd7b767195cb26bb850417bb601d15c0a5607377cab0530",
+  "source_file_sha256": "49b62b7b05c499b9b21d30c3f01a69ff29c45f934ffadd98e3a84f566ed7898a",
+  "suite": [
+    "test_affine_boundaries_and_random",
+    "test_composed_operators",
+    "test_detects_corrupt_proofs_and_codegen",
+    "test_example_sources",
+    "test_fallback_and_pool_validator",
+    "test_named_simplifications",
+    "test_native_generated_c",
+    "test_pool_lower_bound_and_optimality_witness",
+    "test_validation_is_fail_closed",
+    "test_binary_receipt_shape",
+    "test_hazard3_machine_word_decoder",
+    "test_hazard3_receipt_replays_bytes_not_just_hashes",
+    "test_hazard3_rejects_malformed_inputs_and_targets",
+    "test_hazard3_selection_and_unchanged_rest",
+    "test_math_assignments_and_word_notation",
+    "test_math_example_and_regular_loop",
+    "test_math_random_affine_derivation",
+    "test_math_rejects_nonlinearity_dynamic_terms_and_effects",
+    "test_invalid_manifest_and_overlapping_output_fail_before_writes",
+    "test_target_selection_portable_override_and_lean_option",
+    "test_unmatched_riscv_uses_verified_portable"
+  ],
+  "system": "Windows"
+}

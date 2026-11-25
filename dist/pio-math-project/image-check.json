@@ -1,0 +1,26 @@
+{
+  "elf_sha256": "a49889db116c81d38bf8468d0e961ea0d6bec215408d85257c8263372e41c75f",
+  "kernel": {
+    "bytes": 14,
+    "hex": "931755609187518533c5a7088280",
+    "temp_gpr": 15,
+    "arg_and_result_gpr": 10,
+    "sequence": [
+      "sext.h tmp,a0",
+      "srai tmp,tmp,4",
+      "srai a0,a0,20",
+      "pack a0,tmp,a0",
+      "ret"
+    ],
+    "additional_memory_branches_or_spills": false
+  },
+  "pio_words": [
+    "80a0",
+    "a0cf",
+    "8020"
+  ],
+  "pio_descriptor_version": 1,
+  "pio_descriptor_gpio_mask": 0,
+  "verified_compiled_reference_vectors": 5,
+  "hardware_run": false
+}

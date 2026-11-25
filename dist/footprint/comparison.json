@@ -1,0 +1,108 @@
+{
+  "board": "rp2354a",
+  "mode": "Arm XIP / GCC -O3, identical app, no board write",
+  "source_sha256": "9a4fd7825ab8ce21488946403beb3e1a2ca71e023e1d87e6d5f174d0a696e005",
+  "images": {
+    "baseline": {
+      "flash_span_bytes": 5824,
+      "flash_start": "0x10000000",
+      "segments": [
+        [
+          "0x10000000",
+          "0x10001538"
+        ],
+        [
+          "0x10001538",
+          "0x100016ac"
+        ],
+        [
+          "0x100016ac",
+          "0x100016c0"
+        ]
+      ],
+      "symbols": {
+        "rp2cc_pool": {
+          "address": "0x100013a0",
+          "size": 148
+        },
+        "rp_rom_tail": {
+          "address": "0x10000251",
+          "size": 20
+        },
+        "rp_rom_ramp": {
+          "address": "0x1000022d",
+          "size": 16
+        },
+        "rp_rom_middle": {
+          "address": "0x1000023d",
+          "size": 20
+        },
+        "rp_rom_empty": {
+          "address": "0x1000028d",
+          "size": 4
+        },
+        "rp_rom_sync": {
+          "address": "0x10000279",
+          "size": 20
+        },
+        "rp_rom_sweep": {
+          "address": "0x10000265",
+          "size": 20
+        }
+      },
+      "elf_sha256": "5a1cbfca5d13629b25c8fb550ab640b6d0c76815d89666c27184ce995d31536f",
+      "elf": "rp_lab.elf"
+    },
+    "optimized": {
+      "flash_span_bytes": 5760,
+      "flash_start": "0x10000000",
+      "segments": [
+        [
+          "0x10000000",
+          "0x100014f8"
+        ],
+        [
+          "0x100014f8",
+          "0x1000166c"
+        ],
+        [
+          "0x1000166c",
+          "0x10001680"
+        ]
+      ],
+      "symbols": {
+        "rp2cc_pool": {
+          "address": "0x100013a0",
+          "size": 84
+        },
+        "rp_rom_tail": {
+          "address": "0x10000251",
+          "size": 20
+        },
+        "rp_rom_ramp": {
+          "address": "0x1000022d",
+          "size": 16
+        },
+        "rp_rom_middle": {
+          "address": "0x1000023d",
+          "size": 20
+        },
+        "rp_rom_empty": {
+          "address": "0x1000028d",
+          "size": 4
+        },
+        "rp_rom_sync": {
+          "address": "0x10000279",
+          "size": 20
+        },
+        "rp_rom_sweep": {
+          "address": "0x10000265",
+          "size": 20
+        }
+      },
+      "elf_sha256": "f9e48e52ddd82ce3ad194dd130a983a3ee0681ea030bd8ec357adf1c6d654853",
+      "elf": "rp_lab.elf"
+    }
+  },
+  "flash_bytes_saved": 64
+}

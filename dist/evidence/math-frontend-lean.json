@@ -1,0 +1,83 @@
+{
+  "toolchain": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "lean_build": "fresh temporary directory; -j1",
+  "lean_source_sha256": {
+    "Proofs.lean": "32f27b1f553410c3647374845b005a0b6089451d8fb40b28f7fe0e549d554cbe",
+    "Checker.lean": "c080494118f0791b84744ed6ffb981ce37ede125c45d668880a7a0583ebcd155",
+    "PoolExample.lean": "9caf44c1baa484898c0fecb742687913436f053bbb31ca5362df389fc461d404",
+    "Hazard3.lean": "de11c7d04aea4a1e43c04ea9fe4ac7deea14fe79efe584bfea5b3fb22c3b22e1",
+    "Replay.lean": "3e949acfba84a852447ab71d25ff6c28f87c4c1bc8d6282dde0ff893f29d6124",
+    "Audit.lean": "233d2104cff06463f9ac78fbe6c7099055f075b02bb6c27bceabd5c2c26567e8"
+  },
+  "validation_driver_sha256": {
+    "check.py": "0cad74f56b02116bdbac5b6b374a9c41c5f77d75933ad753692a6062c8967b26",
+    "instances.py": "8225e9dc0e1afdf926f4ba8b63d2d09b99e7e513b6301da105d254682616d030"
+  },
+  "audited_theorems": {
+    "floor_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "lane_is_floor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "decoded_floors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "affine_correct": [
+      "propext"
+    ],
+    "dirty_restore": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "slice_sound": [
+      "propext"
+    ],
+    "subst_sound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "norm_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "accepts_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "demo_lower84": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "demo_attains84": [
+      "propext"
+    ],
+    "hazard3_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source": "dist/generated/jump.json",
+  "source_file_sha256": "c685a7f7b978c42806000b3fd5779c80bb98f677be10ca087eb0ebc66fa882e5",
+  "replayed": [
+    {
+      "certificate": "dist/generated/jump/certificate.json",
+      "sha256": "fe196cbe9f78dff10cdb4a64815ae3a818ede0ec5c57dcf169e590ed087955e7",
+      "result": "PASS optimized: 3 universal kernel equalities; 0 checked slices; 0 pool bytes",
+      "kernel_reduced_instance_theorems": 3,
+      "instance_lean_sha256": "03c237cd69329f945ed6e3b2d8aa16ab0ecdcbce9c87ae9e37abc6c47ab407ec"
+    }
+  ],
+  "self_test": {}
+}

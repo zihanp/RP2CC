@@ -1,0 +1,1 @@
+{"baseline_pool_bytes":0,"fallback":[],"kernels":3,"mode":"optimized","pool_alignment_length_gcd_bytes":1,"pool_bytes":0,"pool_distinct_octets":0,"pool_longest_blob_bytes":0,"pool_lower_bound_bytes":0,"pool_optimal":true,"rules":{"affine.jump":2,"swar.floor2.bias":1}}

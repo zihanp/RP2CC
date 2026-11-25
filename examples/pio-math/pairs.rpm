@@ -1,0 +1,3 @@
+# Each 16-bit half of x represents a signed sample.
+def scale_pair(x: u32) -> u32:
+    return lane_floor16(x)

@@ -1,0 +1,16 @@
+/.deps/
+/.build/
+/.work/
+/work/
+__pycache__/
+*.py[cod]
+*.olean
+*.ilean
+*.log
+*.zip
+!/vendor/pico-sdk.zip
+~$*
+.env
+.env.*
+.DS_Store
+Thumbs.db

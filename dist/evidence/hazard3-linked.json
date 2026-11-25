@@ -1,0 +1,21 @@
+{
+  "format": "rp2cc.hazard3.binary-audit.v1",
+  "elf_sha256": "d320fd930a969435c5edef0d3cdab43bc93fd18cd43db70c4b96eb130533f9e5",
+  "receipt_sha256": "47e6dd6364f6bb6d55b9aebdfb569c4b9bdfd587223035419a5c4b4a56fc6f02",
+  "elf_symbols": {
+    "op_floor2": {
+      "bytes": 14,
+      "hex": "931755609187518533c5a7088280",
+      "temp_gpr": 15,
+      "arg_and_result_gpr": 10,
+      "sequence": [
+        "sext.h tmp,a0",
+        "srai tmp,tmp,4",
+        "srai a0,a0,20",
+        "pack a0,tmp,a0",
+        "ret"
+      ],
+      "additional_memory_branches_or_spills": false
+    }
+  }
+}

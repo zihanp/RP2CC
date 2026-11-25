@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "ir": "bench.json",
+  "app": "../firmware/main.c",
+  "board": "rp2350",
+  "arch": "arm",
+  "sources": [],
+  "pio": [],
+  "sdk_libraries": []
+}
